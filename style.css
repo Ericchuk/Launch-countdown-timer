@@ -1,0 +1,118 @@
+:root{
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Very-dark-blue);
+}
+main{
+    margin:0 auto;
+    /* height:79vh; */
+    text-align: center;
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color:var(--White);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin:100px 0 20px;
+}
+div{
+    position: relative;
+}
+h2{
+    color: var(--Soft-red);
+    font-size: 30px;
+    background-color: var(--Dark-desaturated-blue);
+    box-shadow:0 4px 0px 2px var(--Very-dark-mostly-black-blue);
+    width:65px;
+    margin:10px;
+    padding:20px 20px;
+    border-radius: 5px;
+    position: relative;
+}
+h2::before{
+    content: "";
+    padding:6px;
+    position: absolute;
+    left:-7px;
+    top:30px;
+    background-color: var(--Very-dark-blue);
+    border-radius:100px;
+}
+h2::after{
+    content: "";
+    padding:6px;
+    position: absolute;
+    right:-7px;
+    top:30px;
+    background-color: var(--Very-dark-blue);
+    border-radius:100px;
+}
+p{
+    color: var(--Grayish-blue);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+footer{
+    background-image: url(images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-size:290%;
+    background-position: bottom;
+    /* border:2px solid beige; */
+    margin:50px 0 0;
+    padding:100px 0 50px;
+}
+footer a{
+    margin:10px;
+}
+footer div{
+    margin:10px;
+}
+@media screen and (min-width:700px) {
+    main section{
+        justify-content: center;
+    }
+    h2{
+        padding:40px;
+        font-size: 70px;
+        width:140px;
+        margin:0 20px 20px;
+    }
+    h2::before,
+    h2::after{
+        padding:8px;
+        top:70px
+    }
+    footer{
+        background-size:contain;
+        padding:90px 0 10px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    h3{
+        margin:40px 0 80px;
+    }
+    h2{
+        width:150px;
+    }
+    footer{
+        background-size: contain;
+        margin-top:55px;
+        padding:120px 0 40px;
+    }
+}
