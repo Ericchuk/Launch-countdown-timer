@@ -12,7 +12,7 @@
 //  setInterval(count, 1000);
 // window.addEventListener("load", count)
 
-let countdown = new Date("june 16, 2022 09:00:00").getTime();
+let countdown = new Date("june 16, 2023 09:00:00").getTime();
 
 
 // setting coundown
